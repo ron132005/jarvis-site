@@ -28,22 +28,22 @@ export default function Home() {
 
           main {
             text-align: center;
-            padding: 40px;
+            padding: 20px;
             border-radius: 20px;
             background-color: rgba(255, 255, 255, 0.1);
-            box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.3);
-            max-width: 800px;
+            box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.3);
+            max-width: 90%;
             margin: 20px;
             position: relative;
             z-index: 1;
           }
 
           .robot-text {
-            font-size: 20px;
-            line-height: 1.8;
+            font-size: 16px;
+            line-height: 1.6;
             color: #fff;
-            margin-bottom: 30px;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            margin-bottom: 20px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
           }
 
           .quote {
@@ -57,10 +57,10 @@ export default function Home() {
 
           .shapes {
             position: absolute;
-            top: -50px;
-            left: -50px;
-            width: calc(100% + 100px);
-            height: calc(100% + 100px);
+            top: -100px;
+            left: -100px;
+            width: calc(100% + 200px);
+            height: calc(100% + 200px);
             z-index: -1;
           }
 
@@ -72,15 +72,15 @@ export default function Home() {
           }
 
           .circle1 {
-            width: 100px;
-            height: 100px;
-            top: 20%;
+            width: 200px;
+            height: 200px;
+            top: 10%;
             left: 10%;
           }
 
           .circle2 {
-            width: 80px;
-            height: 80px;
+            width: 150px;
+            height: 150px;
             top: 60%;
             left: 60%;
           }
@@ -88,17 +88,17 @@ export default function Home() {
           .triangle {
             width: 0;
             height: 0;
-            border-left: 50px solid transparent;
-            border-right: 50px solid transparent;
-            border-bottom: 87px solid rgba(255, 255, 255, 0.1);
-            top: 50%;
+            border-left: 100px solid transparent;
+            border-right: 100px solid transparent;
+            border-bottom: 174px solid rgba(255, 255, 255, 0.1);
+            top: 40%;
             left: 80%;
             transform: rotate(180deg);
           }
 
           .rectangle {
-            width: 150px;
-            height: 75px;
+            width: 300px;
+            height: 150px;
             top: 70%;
             left: 20%;
           }
@@ -132,10 +132,10 @@ export default function Home() {
 
           @keyframes shape-animation {
             0% {
-              transform: translateY(-10px);
+              transform: translateY(-20px);
             }
             100% {
-              transform: translateY(10px);
+              transform: translateY(20px);
             }
           }
 
@@ -144,54 +144,7 @@ export default function Home() {
               transform: scaleX(1);
             }
             100% {
-              transform: scaleX(1.2);
-            }
-          }
-
-          .particles {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            overflow: hidden;
-          }
-
-          .particle {
-            position: absolute;
-            background-color: rgba(255, 255, 255, 0.5);
-            border-radius: 50%;
-            animation: particle-animation 10s linear infinite;
-          }
-
-          .particle1 {
-            width: 10px;
-            height: 10px;
-            top: 10%;
-            left: 10%;
-          }
-
-          .particle2 {
-            width: 8px;
-            height: 8px;
-            top: 40%;
-            left: 80%;
-          }
-
-          .particle3 {
-            width: 6px;
-            height: 6px;
-            top: 80%;
-            left: 50%;
-          }
-
-          @keyframes particle-animation {
-            0% {
-              transform: translateY(-10px) rotate(0deg);
-            }
-            50% {
-              transform: translateY(10px) rotate(180deg);
-            }
-            100% {
-              transform: translateY(-10px) rotate(360deg);
+              transform: scaleX(1.5);
             }
           }
         `}</style>
@@ -208,12 +161,6 @@ export default function Home() {
         <div className="line line1"></div>
         <div className="line line2"></div>
         <div className="line line3"></div>
-      </div>
-
-      <div className="particles">
-        <div className="particle particle1"></div>
-        <div className="particle particle2"></div>
-        <div className="particle particle3"></div>
       </div>
 
       <main>
