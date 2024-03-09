@@ -22,6 +22,8 @@ export default function Home() {
             background-attachment: fixed;
             padding: 20px;
             color: #fff;
+            position: relative;
+            overflow: hidden;
           }
 
           main {
@@ -33,7 +35,7 @@ export default function Home() {
             max-width: 800px;
             margin: 20px;
             position: relative;
-            overflow: hidden;
+            z-index: 1;
           }
 
           .robot-text {
@@ -145,6 +147,53 @@ export default function Home() {
               transform: scaleX(1.2);
             }
           }
+
+          .particles {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+          }
+
+          .particle {
+            position: absolute;
+            background-color: rgba(255, 255, 255, 0.5);
+            border-radius: 50%;
+            animation: particle-animation 10s linear infinite;
+          }
+
+          .particle1 {
+            width: 10px;
+            height: 10px;
+            top: 10%;
+            left: 10%;
+          }
+
+          .particle2 {
+            width: 8px;
+            height: 8px;
+            top: 40%;
+            left: 80%;
+          }
+
+          .particle3 {
+            width: 6px;
+            height: 6px;
+            top: 80%;
+            left: 50%;
+          }
+
+          @keyframes particle-animation {
+            0% {
+              transform: translateY(-10px) rotate(0deg);
+            }
+            50% {
+              transform: translateY(10px) rotate(180deg);
+            }
+            100% {
+              transform: translateY(-10px) rotate(360deg);
+            }
+          }
         `}</style>
       </Head>
 
@@ -159,6 +208,12 @@ export default function Home() {
         <div className="line line1"></div>
         <div className="line line2"></div>
         <div className="line line3"></div>
+      </div>
+
+      <div className="particles">
+        <div className="particle particle1"></div>
+        <div className="particle particle2"></div>
+        <div className="particle particle3"></div>
       </div>
 
       <main>
