@@ -16,7 +16,7 @@ export default function Home() {
             justify-content: center;
             min-height: 100vh;
             font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
+            background-color: #f8f9fa;
           }
 
           main {
@@ -24,11 +24,13 @@ export default function Home() {
             padding: 20px;
             border-radius: 10px;
             background-color: #fff;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: 20px;
           }
 
           .robot-text {
-            font-size: 18px;
+            font-size: 16px;
             line-height: 1.6;
             color: #333;
             margin-bottom: 20px;
